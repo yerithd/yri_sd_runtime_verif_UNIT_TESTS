@@ -1,0 +1,4 @@
+digraph "YRI_RUNTIME_TEST_DOT_PRINT" {
+"" -> "D"
+"D" -> "E" [xlabel="'yerith'"];
+}
