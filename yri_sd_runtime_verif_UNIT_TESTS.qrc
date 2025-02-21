@@ -1,0 +1,6 @@
+<RCC>
+  <qresource>
+   <file>yri_runtime_monitor_template.HPP</file>
+   <file>yri_runtime_monitor_template.CPP</file>
+  </qresource>
+</RCC>

@@ -1,12 +1,12 @@
 # This file is a part of
-# yr_sd_runtime_verif utility library !
+# yri_sd_runtime_verif utility library !
 #
 # YR
 #
 
 
 TEMPLATE = app
-TARGET = yr_monitor_test_1
+TARGET = yri_monitor_test_1
 
 
 CONFIG -= import_plugins
@@ -26,7 +26,7 @@ QMAKE_CXXFLAGS_RELEASE += --branch-probabilities -fprofile-arcs -ftest-coverage 
 # includes & libs
 INCLUDEPATH += $$PWD/src 
 
-LIBS += -L$$PWD/yr_sd_runtime_verif/lib -lyr_sd_runtime_verif
+LIBS += -L$$PWD/yri_sd_runtime_verif/lib -lyri_sd_runtime_verif
 
 LIBS += -lgcov
 
@@ -35,7 +35,7 @@ DESTDIR = bin
 # app sources
 SOURCES += $$files($$PWD/src/*.cpp)
 HEADERS += $$files($$PWD/src/*.hpp)
-RESOURCES = yr_sd_runtime_verif_UNIT_TESTS.qrc
+RESOURCES = yri_sd_runtime_verif_UNIT_TESTS.qrc
 
 
 

@@ -1,6 +1,0 @@
-<RCC>
-  <qresource>
-   <file>yr_runtime_monitor_template.HPP</file>
-   <file>yr_runtime_monitor_template.CPP</file>
-  </qresource>
-</RCC>

@@ -1,9 +1,9 @@
 /*
- * _YR_RTM_IMPLEMENTATION_FILE_NAME
+ * _YRI_RTM_IMPLEMENTATION_FILE_NAME
  *
  */
 
-#include "_YR_RTM_HEADER_FILE_NAME"
+#include "_YRI_RTM_HEADER_FILE_NAME"
 
 
 #include <QtSql/QSqlRecord>
@@ -15,32 +15,32 @@
 
 #include "utils/yr-db-runtime-verif-logger.hpp"
 
-#include "yr_sd_runtime_verif/YR_CPP_MONITOR.hpp"
-#include "yr_sd_runtime_verif/YR_CPP_MONITOR_STATE.hpp"
-#include "yr_sd_runtime_verif/YR_CPP_MONITOR_EDGE.hpp"
+#include "yri_sd_runtime_verif/YRI_CPP_MONITOR.hpp"
+#include "yri_sd_runtime_verif/YRI_CPP_MONITOR_STATE.hpp"
+#include "yri_sd_runtime_verif/YRI_CPP_MONITOR_EDGE.hpp"
 
 
-void _YR_RTM_REPLACEMENT_QSTRING::YR_CALL_BACK_final_state(YR_CPP_MONITOR 			*a_runtime_monitor,
-																													 YR_CPP_MONITOR_EDGE 	*an_EDGE_leading_TO_error_FINAL_state)
+void _YRI_RTM_REPLACEMENT_QSTRING::YRI_CALL_BACK_final_state(YRI_CPP_MONITOR 			*a_runtime_monitor,
+																													 YRI_CPP_MONITOR_EDGE 	*an_EDGE_leading_TO_error_FINAL_state)
 {
     if (0 != a_runtime_monitor)
     {
-        ( (YR_DB_RUNTIME_VERIF_Monitor *) a_runtime_monitor)
-        		->YR_DB_RUNTIME_VERIF_Monitor_notify_SUCCESS_VERIFICATION(an_EDGE_leading_TO_error_FINAL_state);
+        ( (YRI_DB_RUNTIME_VERIF_Monitor *) a_runtime_monitor)
+        		->YRI_DB_RUNTIME_VERIF_Monitor_notify_SUCCESS_VERIFICATION(an_EDGE_leading_TO_error_FINAL_state);
     }
 }
 
 
 
-_YR_RTM_REPLACEMENT_QSTRING::_YR_RTM_REPLACEMENT_QSTRING()
-    :YR_DB_RUNTIME_VERIF_Monitor()
+_YRI_RTM_REPLACEMENT_QSTRING::_YRI_RTM_REPLACEMENT_QSTRING()
+    :YRI_DB_RUNTIME_VERIF_Monitor()
 {
     __event_edge_DEFINITIONSYRRTMREPLACEMENTQSTRING__
 }
 
 
-_YR_RTM_REPLACEMENT_QSTRING::_YR_RTM_REPLACEMENT_QSTRING(YR_DB_RUNTIME_VERIF_Logger *logger)
-    :YR_DB_RUNTIME_VERIF_Monitor(logger)
+_YRI_RTM_REPLACEMENT_QSTRING::_YRI_RTM_REPLACEMENT_QSTRING(YRI_DB_RUNTIME_VERIF_Logger *logger)
+    :YRI_DB_RUNTIME_VERIF_Monitor(logger)
 {
     __event_edge_DEFINITIONSYRRTMREPLACEMENTQSTRING__
 }
@@ -54,11 +54,11 @@ _YR_RTM_REPLACEMENT_QSTRING::_YR_RTM_REPLACEMENT_QSTRING(YR_DB_RUNTIME_VERIF_Log
  * A SERIOUS VERIFICATION CLIENT MUST OVERRIDE THIS
  * METHOD !
  */
-bool _YR_RTM_REPLACEMENT_QSTRING::DO_VERIFY_AND_or_CHECK_ltl_PROPERTY(
+bool _YRI_RTM_REPLACEMENT_QSTRING::DO_VERIFY_AND_or_CHECK_ltl_PROPERTY(
     QString sql_table_ADDED_with_file_AND_line_number,
     uint	sql_record_qty_MODIFIED,
-    YR_CPP_UTILS::SQL_CONSTANT_IDENTIFIER cur_SQL_command
-    /* = YR_CPP_UTILS::SQL_CONSTANT_IDENTIFIER::UNDEFINED_SQL_COMMAND */)
+    YRI_CPP_UTILS::SQL_CONSTANT_IDENTIFIER cur_SQL_command
+    /* = YRI_CPP_UTILS::SQL_CONSTANT_IDENTIFIER::UNDEFINED_SQL_COMMAND */)
 {
     QStringList sql_table_ADDED_with_file_AND_line_number_LIST =
         sql_table_ADDED_with_file_AND_line_number.split(";", Qt::KeepEmptyParts);
@@ -72,7 +72,7 @@ bool _YR_RTM_REPLACEMENT_QSTRING::DO_VERIFY_AND_or_CHECK_ltl_PROPERTY(
 
     qDebug() << "\t "
              << QString("[C++_STMT (%1.%2)[%3,%4] at %5:%6]").
-             arg(YR_CPP_UTILS::_DB_STMT_verification_ToUserViewString.
+             arg(YRI_CPP_UTILS::_DB_STMT_verification_ToUserViewString.
                  value(cur_SQL_command), sql_table_name,
                  QString::number(cur_SQL_command),
                  QString::number(sql_record_qty_MODIFIED), CPP_FILE_NAME,
@@ -81,16 +81,16 @@ bool _YR_RTM_REPLACEMENT_QSTRING::DO_VERIFY_AND_or_CHECK_ltl_PROPERTY(
 
     switch(cur_SQL_command)
     {
-    case YR_CPP_UTILS::INSERT:
+    case YRI_CPP_UTILS::INSERT:
         break;
 
-    case YR_CPP_UTILS::SELECT:
+    case YRI_CPP_UTILS::SELECT:
         break;
 
-    case YR_CPP_UTILS::UPDATE:
+    case YRI_CPP_UTILS::UPDATE:
         break;
 
-    case YR_CPP_UTILS::DELETE:
+    case YRI_CPP_UTILS::DELETE:
         break;
 
     default:
@@ -102,5 +102,5 @@ bool _YR_RTM_REPLACEMENT_QSTRING::DO_VERIFY_AND_or_CHECK_ltl_PROPERTY(
 }
 
 
-__slots_event_DEFINITIONS_YR_RTM_REPLACEMENT_QSTRING__
+__slots_event_DEFINITIONS_YRI_RTM_REPLACEMENT_QSTRING__
 
