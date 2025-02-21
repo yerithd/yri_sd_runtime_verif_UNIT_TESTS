@@ -1,7 +1,7 @@
 /*
  * YRI_UTILS_GENERATOR_MONITOR_TEST.hpp
  *
- *      Author: PROF. DR.-ING. XAVIER NOUMBISSI NOUNDOU
+ *      Author: Pr. Prof. Dr.-Ing. XAVIER Noumbissi NOUNDOU
  */
 
 

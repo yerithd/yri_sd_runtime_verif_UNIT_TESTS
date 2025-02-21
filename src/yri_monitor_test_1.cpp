@@ -1,7 +1,7 @@
 /*
  * yri_monitor_test_1.cpp
  *
- *      Author: PROF. DR.-ING. XAVIER NOUMBISSI NOUNDOU
+ *      Author: Pr. Prof. Dr.-Ing. XAVIER Noumbissi NOUNDOU
  */
 
 #include <QtTest/QtTest>
