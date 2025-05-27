@@ -13,7 +13,7 @@
 #include <QtSql/QSqlError>
 
 
-#include "utils/yr-db-runtime-verif-logger.hpp"
+#include "utils/yri-db-runtime-verif-logger.hpp"
 
 #include "yri_sd_runtime_verif/YRI_CPP_MONITOR.hpp"
 #include "yri_sd_runtime_verif/YRI_CPP_MONITOR_STATE.hpp"
@@ -33,15 +33,19 @@ void _YRI_RTM_REPLACEMENT_QSTRING::YRI_CALL_BACK_final_state(YRI_CPP_MONITOR 			
 
 
 _YRI_RTM_REPLACEMENT_QSTRING::_YRI_RTM_REPLACEMENT_QSTRING()
-    :YRI_DB_RUNTIME_VERIF_Monitor()
+    :YRI_DB_RUNTIME_VERIF_analysis_Checking_TESTING()
 {
+    ___Fixture___CREATE_Tainted_Analysis_DB_SQL_table_ONCE___();
+
     __event_edge_DEFINITIONSYRRTMREPLACEMENTQSTRING__
 }
 
 
 _YRI_RTM_REPLACEMENT_QSTRING::_YRI_RTM_REPLACEMENT_QSTRING(YRI_DB_RUNTIME_VERIF_Logger *logger)
-    :YRI_DB_RUNTIME_VERIF_Monitor(logger)
+    :YRI_DB_RUNTIME_VERIF_analysis_Checking_TESTING(logger)
 {
+    ___Fixture___CREATE_Tainted_Analysis_DB_SQL_table_ONCE___();
+
     __event_edge_DEFINITIONSYRRTMREPLACEMENTQSTRING__
 }
 

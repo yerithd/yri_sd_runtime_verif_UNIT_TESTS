@@ -6,7 +6,7 @@
 #ifndef _YRI_DB_VERIF_RUNTIME_MONITOR__YRI_RTM_REPLACEMENT_QSTRING_HPP_
 #define _YRI_DB_VERIF_RUNTIME_MONITOR__YRI_RTM_REPLACEMENT_QSTRING_HPP_
 
-#include "include/yr-db-runtime-verif-MONITOR.hpp"
+#include "include/yri-db-runtime-verif-MONITOR__Analysis_CHECKING_Testing.hpp"
 
 #include "yri_sd_runtime_verif/utils/YRI_CPP_UTILS.hpp"
 
@@ -20,7 +20,7 @@ class YRI_CPP_MONITOR_EDGE;
 class YRI_CPP_MONITOR;
 
 
-class _YRI_RTM_REPLACEMENT_QSTRING : public YRI_DB_RUNTIME_VERIF_Monitor
+class _YRI_RTM_REPLACEMENT_QSTRING : public YRI_DB_RUNTIME_VERIF_analysis_Checking_TESTING
 {
     Q_OBJECT
 
