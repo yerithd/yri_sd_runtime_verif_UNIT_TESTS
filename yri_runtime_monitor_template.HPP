@@ -26,14 +26,14 @@ class _YRI_RTM_REPLACEMENT_QSTRING : public YRI_DB_RUNTIME_VERIF_analysis_Checki
 
 public:
 
-    static void YRI_CALL_BACK_final_state(YRI_CPP_MONITOR 			*a_runtime_monitor,
-																				 YRI_CPP_MONITOR_EDGE 	*an_EDGE_leading_TO_error_FINAL_state);
+    static void YRI_CALL_BACK_final_state(YRI_CPP_MONITOR 		*a_runtime_monitor,
+                                          YRI_CPP_MONITOR_EDGE 	*an_EDGE_leading_TO_error_FINAL_state);
 
     _YRI_RTM_REPLACEMENT_QSTRING();
 
     _YRI_RTM_REPLACEMENT_QSTRING(YRI_DB_RUNTIME_VERIF_Logger *logger);
 
-    inline virtual ~_YRI_RTM_REPLACEMENT_QSTRING()
+    virtual inline ~_YRI_RTM_REPLACEMENT_QSTRING()
     {
     }
 
